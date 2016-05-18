@@ -22,9 +22,9 @@ end
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = 'ubuntu/trusty32'
-  config.vm.network 'forwarded_port', :guest => 3000, :host => 3000
-  config.vm.network 'forwarded_port', :guest => 5984, :host => 5984
-  config.vm.network 'forwarded_port', :guest => 8983, :host => 8983
+  config.vm.network 'forwarded_port', :guest => 3000, :host => 4000
+  config.vm.network 'forwarded_port', :guest => 5984, :host => 6984
+  config.vm.network 'forwarded_port', :guest => 8983, :host => 8984
   config.ssh.forward_x11 = true
   config.ssh.forward_agent = true
 

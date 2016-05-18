@@ -61,6 +61,7 @@ group :development, :test, :cucumber do
   gem 'coveralls', :require => false
 
   gem 'pry-rails',          '~> 0.3.2', :platforms => :ruby
+  gem 'pry-byebug',         '~>3.4.0'
   gem 'quiet_assets',       '~> 1.0.3'
 
   gem 'cane',               '~> 2.6.2'
